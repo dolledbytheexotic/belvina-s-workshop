@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:secure_url" content=""/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="dark-root-styles.css">
+
+    <title></title>
+</head>
+<body>
+
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main</a>
+
+    <header>
+
+        <!-- Mobile Nav Strip -->
+        <div class="mobile-wrapper">
+            <div class="mobile-nav container mobile-nav-container">
+                <img class="light" id="mobile-logo" src="beatslogo.jpg" alt="mobile_company_logo" width="110" height="32">
+
+                <img class="dark" id="mobile-logo" src="beatslogo.jpg" alt="mobile_company_logo" width="110" height="32">
+
+                <!-- Hamburger Menu -->
+                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+                    <span aria-hidden="true" class="hamburger-box">
+                        <span aria-hidden="true" class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
+        <nav>
+            <div class="navbar-menu">
+                <div id="side-menu" class=" side-nav">
+                    <a class="nav-logo" href="/index.html">
+                        <img class="light" aria-hidden="true" decoding="async" src="beatslogo.jpg" alt="compnay logo" height="80">
+                        <img class="dark" aria-hidden="true" decoding="async" src="beatslogo.jpg" alt="compnay logo" height="80">
+                    </a>
+                    <ul id="on-top" class="navbar-links">
+                        <li class="nav-li"><a class="link" href="/index.html" style="font-family: 'Dancing Script', cursive;">Home</a></li>
+                        <li class="nav-li"><a class="link" href="/about.html" style="font-family: 'Dancing Script', cursive;">About</a></li>
+                        <li class="nav-li"><a class="link" href="/index.html#services" style="font-family: 'Dancing Script', cursive;">Services</a></li>
+                        <!-- <li class="nav-li"><a class="link" href="html/portfolio.html">Portfolio</a></li> -->
+                        <li class="nav-li"><a class="link" href="/testimonials.html" style="font-family: 'Dancing Script', cursive;">Testimonials</a></li>
+                        <li class="nav-li"><a id="active-menu" class="link" href="/contact.html" style="font-family: 'Dancing Script', cursive;">Contact</a></li>
+                    </ul>
+                </div>
+                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                    <img class="moon" aria-hidden="true" src="moon.svg" alt="" width="24" height="24">
+                    <img class="sun" aria-hidden="true" src="sun.svg" alt="" width="24" height="24">
+                </button>
+            </div>
+        </nav>
+    </header>
+        
+    <main id="main">
+    
+        <!-- ============================================ -->
+        <!--                    Landing                   -->
+        <!-- ============================================ -->
+    
+        <section id="int-hero">
+            <h1 id="home-h" style="font-family: 'Dancing Script', cursive;" style="font-family: 'Dancing Script', cursive;">Contact Business</h2>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                    FORM                      -->
+        <!-- ============================================ -->
+
+        <section id="form">
+            <div class="left-section">
+                <span class="topper" style="font-family: 'Dancing Script', cursive;" style="font-family: 'Dancing Script', cursive;">Business Name</span>
+                <h2 style="font-family: 'Dancing Script', cursive;">Send a Message</h2>
+                <p style="font-family: 'Dancing Script', cursive;">If you have any questions or concerns please feel free to reach out to us.  we respond to every call and email.</p>
+                <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true">
+                        <div class="input-group">
+                            <label for="name" style="font-family: 'Dancing Script', cursive;">Full Name</label>
+                            <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" tabindex="1" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email" style="font-family: 'Dancing Script', cursive;">Email</label>
+                            <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="2" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone" style="font-family: 'Dancing Script', cursive;">Phone</label>
+                            <input id="phone" aria-label="phone number" class="input1" name="phone" placeholder="Phone Number" type="tel" tabindex="3" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group">
+                            <label for="location" style="font-family: 'Dancing Script', cursive;">Location</label>
+                            <input id="location" aria-label="location" class="input1 right" name="location" placeholder="Your Location" type="text" tabindex="4" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group">
+                            <label for="how" style="font-family: 'Dancing Script', cursive;">How did you hear about us</label>
+                            <input id="how" aria-label="how did you hear about us" name="hear" placeholder="How Did You Hear About Us" type="text" tabindex="5" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group textarea">
+                            <label for="message" style="font-family: 'Dancing Script', cursive;">Message</label>
+                            <textarea id="message" aria-label="write your message" name="message" placeholder="Tell us about what you need help with" tabindex="6" required></textarea>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                    <p class="form-submit">
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending" style="font-family: 'Dancing Script', cursive;">Submit</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="info-group">
+                    <span class="heading" style="font-family: 'Dancing Script', cursive;">Location</span>
+                    <span class="info" style="font-family: 'Dancing Script', cursive;">Gaithersberg,MD</span>
+                </div>
+                <div class="info-group">
+                    <span class="heading" style="font-family: 'Dancing Script', cursive;">Phone</span>
+                    <a class="info" href="tel:555-213-9120" style="font-family: 'Dancing Script', cursive;">000-000-000</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading" style="font-family: 'Dancing Script', cursive;">Instagram</span>
+                    <a class="info" href="https://www.instagram.com/beatsbybelvina_/" style="font-family: 'Dancing Script', cursive;">beatsbybelvina_</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading" style="font-family: 'Dancing Script', cursive;">Hours</span>
+                    <span class="info last"style="font-family: 'Dancing Script', cursive;">Mon to Sat</span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href=""><img loading="lazy" decoding="async" src="beatslogo.jpg" alt="logo" width="293" height="91"></a>
+                <p style="font-family: 'Dancing Script', cursive;">
+                    At beatsbybelvina_, our mission is to empower our clients through stunning, transformative beauty experiences. Dedicated to artistry and innovation, we specialize in bold and beautiful makeup applications that not only enhance but celebrate individuality. Our commitment to excellence ensures every client leaves feeling confident, radiant, and uniquely glamorous.
+                </p>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2 style="font-family: 'Dancing Script', cursive;">Company</h2></li>
+                        <li><a href="/index.html" style="font-family: 'Dancing Script', cursive;">Home</a></li>
+                        <li><a href="/about.html" style="font-family: 'Dancing Script', cursive;">About Us</a></li>
+                        <li><a href="/contact.html" style="font-family: 'Dancing Script', cursive;">Services</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2 style="font-family: 'Dancing Script', cursive;">Support</h2></li>
+                        <li><a href="/contact.html" style="font-family: 'Dancing Script', cursive;">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2 style="font-family: 'Dancing Script', cursive;">Get in Touch</h2></li>
+                        <li><img loading="lazy" decoding="async" src="pin.svg" alt="" width="24" height="24"><a href="" target="_blank" style="font-family: 'Dancing Script', cursive;">Gaithersberg,MD</a></li>
+                        <li><img loading="lazy" decoding="async" src="footer-phone.svg" alt="" width="24" height="24"><a href="tel:555-213-9120" style="font-family: 'Dancing Script', cursive;">000-000-0000</a></li>
+                        <li><img loading="lazy" decoding="async" src="email.svg" alt="" width="24" height="24"><a href="mailto:info@email.com" style="font-family: 'Dancing Script', cursive;">belvina736@gmail.com</a></li>
+                    </ul>
+                </div>
+    
+                <div class="buttons">
+                    <a class="button-solid" href="/contact.html" style="font-family: 'Dancing Script', cursive;" >
+                        Book!!!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var ba = ["MSIE","Trident","Edge"];
+        var b, ua = navigator.userAgent;
+        for(var i=0; i < ba.length; i++){
+            if( ua.indexOf(ba[i]) > -1 ){
+                b = ba[i];
+                break;
+            }
+        }
+        if(b == "MSIE" || b == "Trident" || b == "Edge"){
+            b = "Internet Explorer";
+            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+        }
+    </script>
+
+    <script defer src="/app.js"></script>
+</body>
+</html
